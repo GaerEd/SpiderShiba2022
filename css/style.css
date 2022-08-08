@@ -15,9 +15,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 90px;
 }
 .header .header__menu .header__nav__logo {
   display: flex;
+  margin-right: 161px;
 }
 .header .header__menu .header__nav__logo .nav__text__logo {
   font-family: "Nunito", sans-serif;
@@ -42,6 +44,9 @@ body {
 .header .header__menu .nav__row .nav__item:hover {
   color: #E11D2E;
 }
+.header .header__menu .nav__row a:not(:last-child) {
+  margin-right: 15px;
+}
 .header .header__menu .nav__btn__join {
   background: #AC1216;
   border-radius: 10px;
@@ -58,4 +63,98 @@ body {
 }
 .header .header__menu .nav__btn__join:focus {
   background: #5d090c;
+}
+.header .header__content {
+  display: flex;
+}
+.header .header__content .header__text {
+  max-width: 848px;
+  margin-right: 188px;
+}
+.header .header__content .header__text .header__title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 90px;
+  margin: 0 0 5px 0;
+}
+.header .header__content .header__text .header__title .header__text__red {
+  color: #E11D2E;
+}
+.header .header__content .header__text .header__subtitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #71768E;
+}
+.header .header__content .header__text .header__description {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #A0A3B5;
+  margin: 40px 0 46px 0;
+}
+.header .header__content .header__text .header__btn {
+  max-width: 652px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.header .header__content .header__text .header__btn .btn__join {
+  padding: 25px 54px;
+  background: #E11D2E;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-style: none;
+}
+.header .header__content .header__text .header__btn .btn__join:hover {
+  background: #800d11;
+}
+.header .header__content .header__text .header__btn .btn__join:focus {
+  background: #5d090c;
+}
+.header .header__content .header__text .header__btn .btn__more {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 28px 25px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  cursor: pointer;
+  opacity: 0.9;
+  border-style: none;
+}
+.header .header__content .header__text .header__btn .btn__more:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+.header .header__content .header__text .header__btn .btn__more:focus {
+  background: rgba(255, 255, 255, 0.351);
+}
+.header .header__content .header__address {
+  margin-top: 20px;
+  max-width: 652px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 14px 30px;
+  box-sizing: border-box;
+}
+.header .header__content .header__address .address__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.header .header__content .header__address .address__key {
+  margin: 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.4);
 }

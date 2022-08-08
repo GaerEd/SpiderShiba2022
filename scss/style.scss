@@ -1,5 +1,4 @@
 body{
-    
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -14,8 +13,10 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 90px;
         .header__nav__logo {
             display: flex;
+            margin-right: 161px;
             .nav__text__logo {
                 font-family: 'Nunito', sans-serif;
                 margin-left: 15px;
@@ -39,6 +40,9 @@ body{
             .nav__item:hover{
                 color: #E11D2E
             }
+            & a:not(:last-child){
+                margin-right: 15px;
+            }
         }
         .nav__btn__join {
             background: #AC1216;
@@ -56,6 +60,100 @@ body{
         }
         .nav__btn__join:focus{
             background: #5d090c;
+        }
+    }
+    .header__content{
+        display: flex;
+        .header__text{
+            max-width: 848px;
+            margin-right: 188px;
+            .header__title{
+                font-weight: 800;
+                font-size: 80px;
+                line-height: 90px;
+                margin: 0 0 5px 0;
+                .header__text__red{
+                    color: #E11D2E;
+                }
+            }
+            .header__subtitle{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                color: #71768E;
+            }
+            .header__description{
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                display: flex;
+                align-items: center;
+                color: #A0A3B5;
+                margin: 40px 0 46px 0;
+            }
+            .header__btn{
+                max-width: 652px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                .btn__join{
+                    padding: 25px 54px;
+                    background: #E11D2E;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    border-style: none;
+                    &:hover{
+                        background: #800d11;
+                    }
+                    &:focus{
+                        background: #5d090c;
+                    }
+                }
+                .btn__more{
+                    background: rgba(255, 255, 255, 0.05);
+                    border-radius: 10px;
+                    padding: 28px 25px;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    opacity: 0.9;
+                    border-style: none;
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.18);
+                    }
+                    &:focus{
+                        background: rgba(255, 255, 255, 0.351);
+                    }
+                }
+            }
+        }
+        .header__address{
+            margin-top: 20px;
+            max-width: 652px;
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 10px;
+            padding: 14px 30px;
+            box-sizing: border-box;
+            .address__title{
+                margin: 0;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(255, 255, 255, 0.2);
+            }
+            .address__key{
+                margin: 0;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.4);
+            }
         }
     }
 }
